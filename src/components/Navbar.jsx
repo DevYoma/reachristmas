@@ -1,10 +1,28 @@
 import React from 'react';
 import '../styles/Navbar.css';
+import { useParams } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ title, tasks }) => {
+    // this gets the day number from the URL
+    let { dayId } = useParams();
+   
+    const handleButtonClick = () => {
+        alert(tasks)
+    }
     return ( 
         <nav className="navbar">
-            <p>We Love React JS  <span role="img" aria-label="accessible-emoji">⚛️</span></p>
+            {
+                title 
+                ? (
+                    <div className="navbar__topic">
+                        <p>Day {dayId}</p> 
+                        <p>{title}</p> 
+                        <button onClick={handleButtonClick}>Tasks</button>
+                    </div>
+                ) 
+                : (<p>We Love React JS  <span role="img" aria-label="accessible-emoji">⚛️</span></p>)
+            }
+         
         </nav>
      );
 }

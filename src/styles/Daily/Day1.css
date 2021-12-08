@@ -1,0 +1,30 @@
+.day1{
+    min-height: 95vh;
+    background: #F0F4F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.day1 > h2{
+    color: #344D2F;
+    font-size: 2.5rem;
+}
+
+.box{
+    width: 250px;
+    height: 250px;
+    background: #C7375F;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.box > h1{
+    font-size: 4rem;
+}
