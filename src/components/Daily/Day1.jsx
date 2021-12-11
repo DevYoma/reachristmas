@@ -1,10 +1,10 @@
 import React, {  } from 'react';
 import Navbar from '../Navbar';
-import { useParams } from 'react-router';
-import '../../styles/Daily/Day1.css';
+// import { useParams } from 'react-router';
+import styles from  '../../styles/Daily/Day1.module.css';
 
 const Day1 = () => {
-    const { dayId } = useParams();
+    // const { dayId } = useParams();
     const title = "Countdown to Christmas🎄";
     const tasks = [
         "Get today's date", 
@@ -17,13 +17,16 @@ const Day1 = () => {
     return ( 
         <React.Fragment>
             <Navbar title={title} tasks={tasks}/>
-            <div className="day1">
-                <h2>Christmas CountDown 🎄</h2>
-                <div className="box">
+            <div className={styles.day1}>
+                <h2>Christmas CountDown <span role="img" aria-label="accessible-emoji">🎄</span></h2>
+                <div className={styles.box}>
                     <h1>{remainingDays}</h1>
 
                     <p>Days 'til Christmas</p>
                 </div>
+                {/* <button className="day1__codeButton">
+                    View Code
+                </button> */}
             </div>
         </React.Fragment>
      );

@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .day1 > h2{
@@ -27,4 +28,9 @@
 
 .box > h1{
     font-size: 4rem;
+}
+
+.day1__codeButton{
+    margin-bottom: 0;
+    color: red;
 }

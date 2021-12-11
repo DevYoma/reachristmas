@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+
+.day3{
+    background: #77A047;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main{
+    width: 70%;
+    height: 400px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #F0F4F7;
+}
+
+main div > h1 {
+    font-family: 'Rubik Beastly', cursive;
+    font-weight: 300;
+    font-size: 45px;
+    color: #D42D2F;
+}
+
+main > button {
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    background: #D42D2F;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+ .day3__button:hover{
+    background: red;
+ }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Day1 from '../components/Daily/Day1';
 import Day2 from '../components/Daily/Day2';
+import Day3 from '../components/Daily/Day3';
 import NotAvailable from '../components/NotAvailable';
 
 export const getDay = (dayId) =>  {
@@ -16,7 +17,8 @@ export const getDay = (dayId) =>  {
     }
     else if(dayId === 3){
         return (
-            <NotAvailable />
+            // <NotAvailable />
+            <Day3 />
         )
     }
     else if(dayId === 4){
@@ -124,41 +126,7 @@ export const getDay = (dayId) =>  {
             <h2>Day 24</h2>
         )
     }
-    else if(dayId === 25){
-        return (
-            <h2>Day 25</h2>
-        )
-    }
-    else if(dayId === 26){
-        return (
-            <h2>Day 26</h2>
-        )
-    }
-    else if(dayId === 27){
-        return (
-            <h2>Day 27</h2>
-        )
-    }
-    else if(dayId === 28){
-        return (
-            <h2>Day 28</h2>
-        )
-    }
-    else if(dayId === 29){
-        return (
-            <h2>Day 29</h2>
-        )
-    }
-    else if(dayId === 30){
-        return (
-            <h2>Day 30</h2>
-        )
-    }
-    else if(dayId === 31){
-        return (
-            <h2>Day 31</h2>
-        )
-    }
+ 
     else{
         return(
             <h2>Error</h2>

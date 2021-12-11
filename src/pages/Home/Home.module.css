@@ -12,3 +12,8 @@ img{
     margin-top: 10vh;
     min-height: 95vh;
 }
+
+button{
+    background: green;
+}
+

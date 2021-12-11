@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import Selfie from '../../assets/portfolioImage.jpg';
-import "./Home.css"
+import styles from  "./Home.module.css";
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
     return ( 
         <React.Fragment>
             <Navbar />
-            <div className="home">
+            <div className={styles.home}>
                 <h1>JavaScriptmas Edition <span role="img" aria-label="accessible-emoji">🎄</span></h1>
                 <h3>React Edition </h3>
 
@@ -22,8 +22,8 @@ const Home = () => {
                     <li>Everything i know as of today, i learnt from developer communities you name any, Youtube dev community, Scrimba, LinkedIn etc, so why not share knowledge too(I ask myself)</li>
                     <li>I really wanted to build something other people can use </li>
                 </ul>
-
-                <button onClick={() => {
+                {/* className={styles.button} */}
+                <button  onClick={() => {
                     navigate("/days")
                 }}>
                         PROCEED
