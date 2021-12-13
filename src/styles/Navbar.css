@@ -28,3 +28,7 @@ nav > span{
     color: red;
     text-align: right;
 }
+
+.navbar__button{
+    /* background: red; */
+}

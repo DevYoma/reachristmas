@@ -6,6 +6,27 @@
     grid-gap: 10px;
 }
 
+@media only screen and (max-width: 1024px) {
+   .days{
+       grid-template-columns: repeat(3, 1fr);
+       margin: 0 auto;
+   }
+  }
+
+  @media only screen and (max-width: 768px){
+      .days{
+          grid-template-columns: repeat(3, 1fr);
+      }
+  }
+
+  @media only screen and (max-width: 450px){
+    .days{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+  
 .day{
     height: 150px;
     width: 200px;
@@ -14,3 +35,4 @@
     background: rgb(252, 197, 197);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+

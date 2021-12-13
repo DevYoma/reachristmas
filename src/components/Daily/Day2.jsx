@@ -35,10 +35,10 @@ const Day2 = () => {
         <React.Fragment>
             <Navbar title={title} tasks={tasks}/> 
             <div style={backgroundStyles} className="day2">
-                <main style={mainStyles}>
-                    <div>
+                <main className="day2__main" style={mainStyles}>
+                    <div className="day2__mainDiv">
                         {<span role="img" aria-label="accessible-emoji">{isChecked ? ("🎅") : ("☃️")}</span> }
-                        {isChecked ? (<h1>Merry Christmas</h1>) : (<h1>Let it Snow !</h1>)}
+                        {isChecked ? (<h1 >Merry Christmas</h1>) : (<h1>Let it Snow !</h1>)}
                     </div>
                     <div>
                         <label>

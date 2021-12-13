@@ -12,21 +12,21 @@ const Day3 = () => {
 
     const handleChange = () => {
         setIsChristmas(prevIsChristmas => !prevIsChristmas);
-        console.log(isChristmas)
+        // console.log(isChristmas)
     }
 
     return ( 
         <React.Fragment>
             <Navbar title={title} tasks={tasks}/> 
             <div className="day3">
-                <main>
+                <main className="day3__main">
                     <div>
-                        <span role="img" aria-label="accessible-emoji">🎃</span> 
-                        <h1>Merry Christmas</h1>
-                        <span role="img" aria-label="accessible-emoji">👻</span> 
+                        <span role="img" aria-label="accessible-emoji">{isChristmas ? "☃️" : "🎃"}</span> 
+                        <h1 className={isChristmas ? "christmas" : "haloween"}>Merry Christmas</h1>
+                        <span role="img" aria-label="accessible-emoji">{isChristmas ? "🎁" : "👻"}</span> 
                     </div>
 
-                        <button className="day3__button" onClick={handleChange}>fix</button>
+                        <button className="day3__button" onClick={handleChange}>{isChristmas ? "Reset" : "fix"}</button>
                 </main>
             </div>  
         </React.Fragment>

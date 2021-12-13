@@ -1,7 +1,6 @@
 :root{
     --snow-container: #344D2F;
     --snow-page: #F0F4F7;
-
 }
 
 .day2{
@@ -10,7 +9,7 @@
     place-items: center;
 }
 
-main{
+.day2__main{
     width: 70%;
     height: 400px;
     border-radius: 15px;
@@ -20,14 +19,11 @@ main{
     align-items: center;
 }
 
-main > div {
+.day2__mainDiv{
     display: flex;
     align-items: center;
 }
 
-main > div > h1, 
-main > div > span
-{
+.day2__mainDiv > * {
     font-size: 45px;
 }
-

@@ -9,7 +9,7 @@
 }
 
 
-main{
+.day3__main{
     width: 70%;
     height: 400px;
     border-radius: 15px;
@@ -20,11 +20,25 @@ main{
     background: #F0F4F7;
 }
 
-main div > h1 {
-    font-family: 'Rubik Beastly', cursive;
+.day3__main > div {
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+}
+
+.day3__main > div > h1 {
+    /* font-family: 'Rubik Beastly', cursive; */
     font-weight: 300;
     font-size: 45px;
     color: #D42D2F;
+}
+
+.haloween{
+    font-family: 'Rubik Beastly';
+}
+
+.christmas{
+    font-family: cursive;
 }
 
 main > button {

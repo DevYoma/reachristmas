@@ -2,6 +2,7 @@ import React from 'react';
 import Day1 from '../components/Daily/Day1';
 import Day2 from '../components/Daily/Day2';
 import Day3 from '../components/Daily/Day3';
+import Day4 from '../components/Daily/Day4';
 import NotAvailable from '../components/NotAvailable';
 
 export const getDay = (dayId) =>  {
@@ -23,7 +24,8 @@ export const getDay = (dayId) =>  {
     }
     else if(dayId === 4){
         return (
-            <NotAvailable />
+            // <NotAvailable />
+            <Day4 />
         )
     }
     else if(dayId === 5){
