@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+.day5{
+    height: 95vh;
+    background:#C7375F ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.day5__main{
+    width: 400px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    margin-top: -10vh;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    font-size: 30px;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.day5__main > h2{
+    font-family: 'Caveat', cursive;
+    /* font-weight: 500; */
+}
+
+.day5__button{
+    background: #FAC57D;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}

@@ -3,6 +3,8 @@ import Day1 from '../components/Daily/Day1';
 import Day2 from '../components/Daily/Day2';
 import Day3 from '../components/Daily/Day3';
 import Day4 from '../components/Daily/Day4';
+import Day5 from '../components/Daily/Day5';
+import Day6 from '../components/Daily/Day6';
 import NotAvailable from '../components/NotAvailable';
 
 export const getDay = (dayId) =>  {
@@ -18,24 +20,22 @@ export const getDay = (dayId) =>  {
     }
     else if(dayId === 3){
         return (
-            // <NotAvailable />
             <Day3 />
         )
     }
     else if(dayId === 4){
         return (
-            // <NotAvailable />
             <Day4 />
         )
     }
     else if(dayId === 5){
         return (
-            <NotAvailable />
+            <Day5 />
         )
     }
     else if(dayId === 6){
         return (
-            <NotAvailable />
+            <Day6 />
         )
     }
     else if(dayId === 7){

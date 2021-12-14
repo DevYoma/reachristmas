@@ -1,0 +1,31 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+.day6{
+    min-height: 95vh;
+    background: #77A047;
+    display: grid;
+    place-items: center;
+}
+
+.day6__main{
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    min-width: 450px;
+}
+
+.day6__main > h1{
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.chrismassfiy{
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 45px;
+}
