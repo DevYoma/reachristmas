@@ -1,0 +1,8 @@
+.playing{
+    background-color: red;
+    padding: 10px;
+}
+
+.notPlaying{
+    display: none;
+}

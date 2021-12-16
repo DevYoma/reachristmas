@@ -1,0 +1,9 @@
+.playing{
+    /* display: ; */
+}
+
+.notPlaying{
+    display: none;
+    background: red;
+    padding: 10px;
+}
