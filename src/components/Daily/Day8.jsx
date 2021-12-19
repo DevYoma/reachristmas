@@ -10,25 +10,33 @@ const Day8 = () => {
 
     // app state
     const audio = new Audio(Music)
-    const [isPlaying, setIsPlaying] = useState(false)
+    let playing = true
+    // const [isPlaying, setIsPlaying] = useState(false)
 
     const handlePlay = () => {
-        // setIsPlaying(prevIsPlaying => !prevIsPlaying)
         audio.play();
-        console.log(audio.play);
+        // if(playing){
+        //     playing = false
+        // }
+        // console.log(isPlaying);
+        // setIsPlaying(prevIsPlaying => prevIsPlaying)
+        // return isPlaying
+        // console.log(audio.play);
     }     
     
     const handlePause = () => {
         // setIsPlaying(prevIsPlaying => !prevIsPlaying)
         audio.pause();
+        playing = true;
     }
 
     const handleStop = () => {
         // setIsPlaying(prevIsPlaying => !prevIsPlaying)
         audio.pause();
         audio.currentTime = 0;
+        
     }
-  
+
     const buttonArray = [
         {
             id: 1,
@@ -50,8 +58,6 @@ const Day8 = () => {
         }
     ]
 
-  
-
     const mappedButtonArray = buttonArray.map(item => (
         <button 
             key={item.id} 
@@ -63,6 +69,7 @@ const Day8 = () => {
         </button>
     ))
 
+
     return ( 
         <React.Fragment>
             <Navbar title={title} tasks={tasks}/>
@@ -71,7 +78,10 @@ const Day8 = () => {
                     <div className="day7__mainDiv1">
                         <Emoji emoji="🎄"/>
                         <p>Jingle all the way!</p>
-                        <Emoji emoji="🔔" isPlaying={isPlaying} setIsPlaying={setIsPlaying}/>
+                        {/* isPlaying={isPlaying} setIsPlaying={setIsPlaying} */}
+                        <span>
+                            {playing && (<Emoji emoji="🔔" />)}
+                        </span>
                     </div>
 
                     <div className="day7__mainDiv2">

@@ -3,10 +3,6 @@ import Navbar from '../Navbar';
 import '../../styles/Daily/Day6.css';
 
 const Day6 = () => {
-    const title = "Text Chrismassifier"
-    const tasks = [
-        "task 6"
-    ]
 
     // app state
     const [christmassified, setChristmassified] = useState(false)
@@ -17,7 +13,7 @@ const Day6 = () => {
 
     return (
         <React.Fragment>
-            <Navbar title={title} tasks={tasks} />
+            <Navbar />
             <div className="day6">
                 <main className="day6__main">
                     <h1 className={christmassified ? "chrismassfiy" : null}>

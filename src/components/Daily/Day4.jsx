@@ -3,10 +3,6 @@ import Navbar from '../Navbar';
 import '../../styles/Daily/Day4.css';
 
 const Day4 = () => {
-    const title = "Shopping List";
-    const tasks = [
-        "task 4"
-    ]
 
     // app state
     const[shoppingList, setShoppingList] = useState([
@@ -48,7 +44,7 @@ const Day4 = () => {
     ))
     return ( 
         <React.Fragment>
-            <Navbar title={title} tasks={tasks}/>
+            <Navbar />
             <div className="day4">
                 <h1>Christmas Shopping List</h1>
 

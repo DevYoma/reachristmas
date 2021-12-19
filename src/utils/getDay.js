@@ -6,7 +6,10 @@ import Day4 from '../components/Daily/Day4';
 import Day5 from '../components/Daily/Day5';
 import Day6 from '../components/Daily/Day6';
 import Day7 from '../components/Daily/Day7';
-import Day8 from '../components/Daily/Day8';
+// import Day8 from '../components/Daily/Day8';
+import Day9 from '../components/Daily/Day9';
+import Day10 from '../components/Daily/Day10';
+import Day11 from '../components/Daily/Day11';
 import NotAvailable from '../components/NotAvailable';
 
 export const getDay = (dayId) =>  {
@@ -47,23 +50,23 @@ export const getDay = (dayId) =>  {
     }
     else if(dayId === 8){
         return (
-            // <NotAvailable />
-            <Day8 />
+            <NotAvailable />
+            // <Day8 />
         )
     }
     else if(dayId === 9){
         return (
-            <NotAvailable />
+            <Day9 />
         )
     }
     else if(dayId === 10){
         return (
-            <NotAvailable />
+            <Day10 />
         )
     }
     else if(dayId === 11){
         return (
-            <h2>Day 11</h2>
+            <Day11 />
         )
     }
     else if(dayId === 12){

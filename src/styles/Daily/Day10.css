@@ -1,0 +1,25 @@
+.day10{
+    height: 95vh;
+    background: whitesmoke;
+    display: grid;
+    place-items: center;
+}
+
+.day10 > .loader{
+    width: 80%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.day10 > .loader > .loader__progressBar{
+    overflow: hidden;
+    height: 28px;
+    border-radius: inherit;
+    background: red;
+}
+
+.day10 > div:nth-child(2){
+    display: flex;
+    font-size: 30px;
+}

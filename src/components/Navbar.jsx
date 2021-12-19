@@ -1,16 +1,21 @@
 import React from 'react';
 import '../styles/Navbar.css';
 import { useParams } from 'react-router-dom';
-// import { getNavData } from '../utils/getNavData';
+import { getNavData } from '../utils/getNavData';
 
-const Navbar = ({ title, tasks }) => {
+// { title, tasks }
+const Navbar = () => {
     // trying to make the navbar a reusable component...
-    // console.log(getNavData);
-
 
     // this gets the day number from the URL
     let { dayId } = useParams();
-   
+    // console.log(dayId);
+    const number = parseInt(dayId)
+
+    const title = (getNavData[number - 1]?.title)
+    const tasks = (getNavData[number - 1]?.tasks)
+
+
     const handleButtonClick = () => {
         alert(tasks)
     }

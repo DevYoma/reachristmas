@@ -3,11 +3,6 @@ import '../../styles/Daily/Day5.css';
 import Navbar from '../Navbar';
 
 const Day5 = () => {
-    // navbar State
-    const title = "Christmas Card Writer";
-    const tasks = [
-        "Task 5"
-    ]
 
     // app state
     const greetings = [
@@ -26,7 +21,7 @@ const Day5 = () => {
     
     return ( 
         <React.Fragment>
-            <Navbar title={title} tasks={tasks}/>
+            <Navbar />
             <div className="day5">
                 <div className="day5__main">
                     <h2>{greetings[randomGreeting]}</h2>

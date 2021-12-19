@@ -4,12 +4,8 @@ import '../../styles/Daily/Day2.css';
 import Switch from "react-switch";
 
 const Day2 = () => {
-    const title = "Toggle Christmas Theme";
-    const tasks = [
-        "Task 2"
-    ]
 
-    // task State
+    // app State
     const [isChecked, setIsChecked] = useState(true)
 
     const backgroundStyles = {
@@ -33,7 +29,7 @@ const Day2 = () => {
 
     return ( 
         <React.Fragment>
-            <Navbar title={title} tasks={tasks}/> 
+            <Navbar /> 
             <div style={backgroundStyles} className="day2">
                 <main className="day2__main" style={mainStyles}>
                     <div className="day2__mainDiv">

@@ -5,10 +5,6 @@ import '../../styles/Daily/Day3.css';
 const Day3 = () => {
     // app state
     const [isChristmas, setIsChristmas] = useState(false);
-    const title = "Haloween to Christmas";
-    const tasks = [
-        "task 3"
-    ]
 
     const handleChange = () => {
         setIsChristmas(prevIsChristmas => !prevIsChristmas);
@@ -17,7 +13,7 @@ const Day3 = () => {
 
     return ( 
         <React.Fragment>
-            <Navbar title={title} tasks={tasks}/> 
+            <Navbar /> 
             <div className="day3">
                 <main className="day3__main">
                     <div>

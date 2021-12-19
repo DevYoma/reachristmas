@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/Emoji.css';
 
-const Emoji = ({emoji, isPlaying, setIsPlaying}) => {
+const Emoji = ({emoji}) => {
     return ( 
-        <span className={isPlaying ? "playing" : "notPlaying"}>
+        <span>
             {emoji}
         </span>
      );
