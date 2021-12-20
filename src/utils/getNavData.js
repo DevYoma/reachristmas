@@ -51,47 +51,47 @@ export const getNavData = [
     },
     {
         id: 11, 
-        title: "CountDown to Christmas",
+        title: "Christmas Carousel",
         tasks: ["Task 1", "Task 2", "Task 3"]
     },
     {
         id: 12, 
-        title: "Christmas Snow Style",
+        title: "Christmas Guest List",
         tasks: ["Task 1", "Task 2", "Task 3"]
     }, 
     {
         id: 13, 
-        title: "Haloween to Christmas",
+        title: "Christmas Dinner Calculator",
         tasks: ["Task 1", "Task 2", "Task 3"]
     },
     {
         id: 14,
-        title: "",
+        title: "Lonely Elf",
         tasks: ["Task 1", "Task 2", "Task 3"]
     }, 
     {
         id: 15,
-        title: "",
+        title: "Festive Translator",
         tasks: []
     },
     {
         id: 16, 
-        title: "CountDown to Christmas",
+        title: "Christmas Movie Selector",
         tasks: ["Task 1", "Task 2", "Task 3"]
     },
     {
         id: 17, 
-        title: "Christmas Snow Style",
+        title: "Naughty List, Nice List",
         tasks: ["Task 1", "Task 2", "Task 3"]
     }, 
     {
         id: 18, 
-        title: "Haloween to Christmas",
+        title: "Custom Shopping Checkboxes",
         tasks: ["Task 1", "Task 2", "Task 3"]
     },
     {
         id: 19,
-        title: "",
+        title: "Dessert Decider",
         tasks: ["Task 1", "Task 2", "Task 3"]
     }, 
     {

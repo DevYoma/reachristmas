@@ -1,0 +1,25 @@
+.day11{
+    background: #F0F4F7;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.day11 > main{
+    width: 60%;
+    height: 450px;
+    background: #77A047;
+    border-radius: 10px;
+    margin-top: -10vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.day11 > main > div{
+    width: 60%;
+    height: 200px;
+    background: yellow;
+}
